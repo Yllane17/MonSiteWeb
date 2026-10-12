@@ -42,8 +42,67 @@ section {
    background-color: white;
   }
 
+.content-form{
+  display: flex ;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3px;
+}
+
+input{
+  border-radius: 3px;
+  border: none;
+  height: 35px;
+}
+
+textarea{
+  border-radius: 3px;
+  border-color: black;
+  border: none;
+  height: 35px;
+}
+
+fieldset{
+  border: 2px transparent;
+  background: linear-gradient(-120deg,#17365d, transparent);
+}
+
 footer { 
 padding: 12px; 
 text-align: center; 
 background: #e1eaf4; 
 } 
+
+.button-form{
+  background: linear-gradient(-90deg, #17365d, transparent );
+  width: 35%;
+  height: 15%;
+  color: white;
+}
+
+.content-service{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+  gap: 3%;
+}
+
+h4{
+ color: #17365d;
+ text-transform: uppercase;
+}
+
+.service-card{
+  border: unset 1px;
+  border-radius: 10px;
+  background: linear-gradient(0deg, #17365d, transparent );
+  margin: 2px;
+  text-align: center;
+  color: white;
+}
+
+@media (min-width: 400px) {
+
+  
+}
