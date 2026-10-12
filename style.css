@@ -102,7 +102,24 @@ h4{
   color: white;
 }
 
-@media (min-width: 400px) {
+.about-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 9px;
+}
+
+.about-list{
+  text-align: left;
+  border: 1px solid whitesmoke;
+  border-radius: 7px;
+  width: 55%;
+  height: 40%;
+  background: linear-gradient(-90deg, #17365d, transparent );
+}
+
+/* @media (min-width: 400px) {
 
   
-}
+} */
