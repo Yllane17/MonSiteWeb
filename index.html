@@ -20,16 +20,27 @@ scale=1.0">
   <main> 
     <section id="apropos"> 
       <h2>CDWFS</h2> 
-      <p>Conception et Développement Web Full Stack.</p> 
-      <h3>Nos formations</h3>
-      <div class="about-parent">Developpement Web
-          <div class="about-list">Laravel : Construction des applications robustes</div>
-          <div class="about-list">React : Création d'interfaces utilisateur dynamiques</div>
-          <div class="about-list">Node.js : Développement côté serveur efficace</div>
-          <div class="about-list">Base de données : Sauvegarde des informations</div>
-          <div class="about-list">Modelisation UML : Création de modèles pour la conception de systèmes</div>
-      </div>
+      <p class="about-text">Concpetion et Développement Web Full Stack (CDWFS) est une formation complète dans le domaine du développement web.
+        Elle couvre les technologies front-end et back-end, ainsi que la gestion de bases de données et l'hébergement web.
+      </p> 
+      <h3 class="about-title">Nos formations</h3>
+      <div class="about-parent">
+          <div class="about-child">
+            <div class="about-list">Laravel : Construction des applications robustes</div>
+            <div class="about-list">React : Création d'interfaces utilisateur dynamiques</div>
+          </div>
+
+          <div class="about-child">
+            <div class="about-list">Node.js : Développement côté serveur efficace</div>
+            <div class="about-list">Base de données : Sauvegarde des informations</div>
+          </div>
+          <div class="about-child">
+            <div class="about-list">Modelisation UML : Création de modèles pour la conception de systèmes</div>
+            <div class="about-list">Hébergement web : deploiement de sites web en hebergement VPS</div>
+          </div>
+      </div> 
     </section> 
+
     <section id="services"> 
       <h2>Nos services</h2> 
       <p>Quelques services que nous proposons ici </p> 
@@ -63,11 +74,11 @@ scale=1.0">
       <form action="" class="contact-form">
         <fieldset>
           <div class="content-form">
-            <label for="Nom">Nom :</label> <input type="text" name="nom" id="nom">
+            <label for="Nom">Nom :</label> <input type="text" name="nom" id="nom" required>
             <br>
-            <label for="email">Email :</label> <input type="email" name="email" id="email">
+            <label for="email">Email :</label> <input type="email" name="email" id="email" required>
             <br>
-            <label for="message">Message :</label> <textarea name="message" id="message" placeholder="Je voudrais savoir un renseigement..."></textarea>
+            <label for="message">Message :</label> <textarea name="message" id="message" placeholder="Je voudrais savoir un renseigement..." required></textarea>
             <br>
             <input type="submit" value="Envoyer" class="button-form">
           </div>
