@@ -25,3 +25,21 @@ cards.forEach(card => {
     gsap.to(card, { scale:1, duration:0.3});
   });
 });
+
+let tl= gsap.timeline();
+ tl.from("header",{
+  y:100,
+  opacity:0,
+  duration:0.8
+ })
+ .from("nav",{
+  y:100,
+  opacity:0,
+  duration:0.6
+ }, "-=0.3")
+
+ .from("footer",{
+  y:100,
+  opacity:0,
+  duration:0.6
+ }, "-=0.3")  

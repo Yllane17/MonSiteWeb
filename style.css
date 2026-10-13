@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-style: normal white;
+  color: #e1eaf4;
 
 }
 
@@ -10,20 +10,29 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #222;
-  background: #f4f7fb;
+  background: #17365d;
+  background: -webkit-linear-gradient(0deg, #17365d 0%, #10365d 50%, rgba(0, 0, 0, 0.97) 100%);
+  background: linear-gradient(0deg, #17365d 0%, #10365d 50%, rgba(0, 0, 0, 0.97) 100%);
 }
 
 header {
   padding: 28px 16px;
   text-align: center;
-  color: white;
-  background: #17365d;
-  border: 1px thick solid white;
+  color: #17365d;
+  /* background: #17365d; */
+  background: rgb(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
 nav a {
   margin: 0 10px;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -31,13 +40,20 @@ main {
   display: block;
   width: min(900px, 92%);
   margin: 24px auto;
+
+
 }
 
 section {
-   margin-bottom: 18px; 
-  padding: 22px; 
-  background: white; 
+  margin-bottom: 18px;
+  padding: 22px;
+  background: white;
   border-radius: 8px;
+  background: rgb(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* border-radius: 16px; */
 }
 
 #apropos h3 {
@@ -79,19 +95,27 @@ section {
 textarea {
   border-radius: 3px;
   border-color: black;
-  border: none;
+  border: 1px solid #ccc;
   height: 35px;
+  padding: 7px;
 }
 
 fieldset {
-  border: 2px transparent;
-  background: linear-gradient(-120deg, #17365d, transparent);
+  border: none transparent;
 }
 
 footer {
   padding: 12px;
   text-align: center;
   background: #e1eaf4;
+  background: rgb(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
 }
 
 .button-form {
@@ -127,6 +151,8 @@ h4 {
   text-align: center;
   transition: transform 0.3s ease-in-out;
   color: white;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .service-card:hover {
@@ -138,7 +164,6 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* align-items: center; */
   gap: 9px;
   flex-wrap: wrap;
 }
