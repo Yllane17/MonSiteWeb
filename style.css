@@ -99,8 +99,9 @@ section {
 }
 
 input[type="submit"]:hover{
-  background: #00ffff;
+  background: #31324d;
   transform: scale(1.05);
+  color:white;
 }
 
 textarea {
